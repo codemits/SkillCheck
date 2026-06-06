@@ -9,5 +9,5 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["demo/**/*.ts"]
+  "include": ["run_demo.ts", "validate_skill.ts"]
 }

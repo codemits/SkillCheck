@@ -8,10 +8,10 @@ This project demonstrates that **Agent Skills** are behavior-defining artifacts.
 - **Different Behavior**
 
 ## Project Structure
-- `demo/skills/`: Contains two versions of the API Testing skill.
-- `demo/sample-api/`: A simple OpenAPI specification.
-- `demo/run_demo.ts`: Simulates the AI response based on the loaded skill.
-- `demo/validate_skill.ts`: Validates if the generated output meets the quality requirements.
+- `skills/`: Contains two versions of the API Testing skill.
+- `sample-api/`: A simple OpenAPI specification.
+- `run_demo.ts`: Simulates the AI response based on the loaded skill.
+- `validate_skill.ts`: Validates if the generated output meets the quality requirements.
 
 ## Running the Demo
 

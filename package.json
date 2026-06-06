@@ -2,11 +2,11 @@
   "name": "skillcheck-demo",
   "version": "1.0.0",
   "description": "TypeScript migration of Skill Validation Demo",
-  "main": "demo/run_demo.ts",
+  "main": "run_demo.ts",
   "author": "Mohit Kumar (https://github.com/codemits)",
   "scripts": {
-    "demo": "ts-node demo/run_demo.ts",
-    "validate": "ts-node demo/validate_skill.ts"
+    "demo": "ts-node run_demo.ts",
+    "validate": "ts-node validate_skill.ts"
   },
   "devDependencies": {
     "@types/node": "^18.15.0",
