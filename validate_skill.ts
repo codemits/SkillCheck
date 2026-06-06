@@ -9,17 +9,18 @@ function validate(outputFile: string): boolean {
 
     const content = fs.readFileSync(outputFile, 'utf8');
 
+    // Use regular expressions for robust header detection (handles case sensitivity, Markdown headers, and bold styling variations)
     const requiredSections = [
-        "## Happy Path Tests",
-        "## Boundary Tests",
-        "## Negative Tests",
-        "## Security Tests"
+        { name: "Happy Path Tests", pattern: /(#+|\*\*)\s*happy\s*path/i },
+        { name: "Boundary Tests", pattern: /(#+|\*\*)\s*boundary/i },
+        { name: "Negative Tests", pattern: /(#+|\*\*)\s*negative/i },
+        { name: "Security Tests", pattern: /(#+|\*\*)\s*security/i }
     ];
 
     const missing: string[] = [];
     for (const section of requiredSections) {
-        if (!content.includes(section)) {
-            missing.push(section.replace("## ", ""));
+        if (!section.pattern.test(content)) {
+            missing.push(section.name);
         }
     }
 

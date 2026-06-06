@@ -21,7 +21,15 @@ This project demonstrates that **Agent Skills** are behavior-defining artifacts.
    ```
 
 2. **Generate Outputs**:
+   By default, the demo runs in a local **Mock Mode** (zero setup required).
+   
+   To run the demo using a **real Gemini AI model**, set your `GEMINI_API_KEY` environment variable before running:
    ```bash
+   # Run in Mock Mode (Default)
+   npm run demo
+
+   # Run with Real Gemini AI
+   export GEMINI_API_KEY="your-api-key-here"
    npm run demo
    ```
 
