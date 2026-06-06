@@ -38,6 +38,17 @@ This project demonstrates that **Agent Skills** are behavior-defining artifacts.
    npm run validate
    ```
 
+## Behavior Notes
+
+- **Mode selection**:
+   - If `GEMINI_API_KEY` is set, `run_demo.ts` uses Gemini.
+   - If `GEMINI_API_KEY` is not set, the demo runs in local Mock Mode.
+   - If Gemini generation fails at runtime, the script falls back to Mock Mode.
+
+- **Validation contract**:
+   - This demo is intentionally opinionated: v1 is expected to pass and v2 is expected to fail (missing Security Tests).
+   - `npm run validate` returns a non-zero exit code only when this expected contract is violated.
+
 ## Expected Results & Behavior Comparison
 
 | Test Category | Skill Version 1 (with security) | Skill Version 2 (no security) |
