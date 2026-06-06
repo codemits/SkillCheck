@@ -48,6 +48,7 @@ function main() {
         if (v2Res) {
             console.log("\nError: v2-output.md should have failed validation.");
         }
+        process.exitCode = 1;
     }
 }
 
