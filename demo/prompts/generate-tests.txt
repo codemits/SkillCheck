@@ -1,0 +1,4 @@
+Using the provided OpenAPI specification and the instructions in your Skill, generate a detailed test plan in markdown format. 
+
+OpenAPI Spec:
+{{openapi_spec}}
